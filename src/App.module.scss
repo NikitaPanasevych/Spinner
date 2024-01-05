@@ -1,0 +1,129 @@
+.circle{
+
+    width: 25em;
+    height: 25em;
+    border: 1px solid black;
+    position: relative;
+    padding: 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    list-style: none;
+    overflow: hidden;
+    transform: rotate(-30deg) ;
+    
+
+    &__element{
+
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        transform-origin: 0% 100%;
+
+        &:first-child{
+            background-color: aqua;
+            transform: rotate(60deg) skewY(-30deg);
+        }
+
+        &:nth-child(2){
+            background-color: blueviolet;
+            transform: rotate(120deg) skewY(-30deg);
+        }
+        &:nth-child(3){
+            background-color:brown;
+            transform: rotate(180deg) skewY(-30deg);
+        }
+        &:nth-child(4){
+            background-color:chocolate;
+            transform: rotate(240deg) skewY(-30deg);
+        }    
+        &:nth-child(5){
+            background-color:cornsilk;
+            transform: rotate(300deg) skewY(-30deg);
+        }
+        &:nth-child(6){
+            background-color:darkkhaki;
+            transform: rotate(360deg) skewY(-30deg);
+        }
+
+        &__title{
+            background-color: inherit;
+            position: absolute;
+            left: -100%;
+            width: 200%;
+            height: 200%;
+            text-align: center;
+            display: block;
+            transform: skewY(30deg) rotate(30deg);
+            padding-top: 20px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}
+
+
+.arrow{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 50px solid black;
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: azure;
+    border: 1px solid black;
+    margin: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-60%);
+}
+
+
+//-----------------------------------------spins-------------------------------------------//
+
+
+.NoLuck{
+    transition: all 5s ease-in-out;
+    transform: rotate(1000deg);
+    
+}
+
+.X2{
+    transition: all 5s ease-in-out;
+    transform: rotate(920deg);
+}
+
+.small__win{
+    transition: all 5s ease-in-out;
+    transform: rotate(850deg);
+}
+
+.medium__win{
+    transition: all 5s ease-in-out;
+    transform: rotate(800deg);
+}
+
+.big__win{
+    transition: all 5s ease-in-out;
+    transform: rotate(1100deg);
+}
+
+.jackpot{
+    transition: all 5s ease-in-out;
+    transform: rotate(1075deg);
+}
+
+
+
+
